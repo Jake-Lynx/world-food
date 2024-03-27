@@ -1,0 +1,12 @@
+// Media queries mixins
+@mixin media-small
+	@media (max-width: $breakpoint-small)
+		@content
+
+@mixin media-medium
+	@media (max-width: $breakpoint-medium)
+		@content
+
+@mixin media-large
+	@media (max-width: $breakpoint-large)
+		@content

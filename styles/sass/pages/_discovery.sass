@@ -1,0 +1,68 @@
+.discovery-hero
+	position: relative
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-items: center
+	margin: 3.12rem 0
+	@include media-medium
+		flex-direction: column-reverse
+		margin-bottom: 0.5rem
+	
+	&__title
+		@include media-small
+			text-align: center
+	&__layer
+		position: absolute
+		top: 4rem
+		right: 0
+		width: 40.06rem
+		height: 38rem
+		border-radius: 59.875rem
+		background: linear-gradient(142deg, $color-accent-1--active 0%, $color-error-1 100%)
+		filter: blur(15.63rem)
+		z-index: -2
+
+	&__map
+		position: absolute
+		right: 0
+		width: 40.06rem
+		height: 38rem
+		background: url("../assets/images/map.png") no-repeat
+		background-position-y: 60% 
+		z-index: -1
+
+	&__image
+		@include media-medium
+			width: 100%
+
+
+.discovery-content
+	margin: 5rem 0
+
+.discovery-recipe
+	&__continent
+		display: flex
+		flex-direction: column
+
+	&__list
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr 1fr
+		@include media-medium
+			grid-template-columns: 1fr 1fr 1fr
+		@include media-small
+			grid-template-columns: 1fr 1fr
+
+		& .discovery-card:nth-child(4)
+			@include media-medium
+				display: none
+
+		& .discovery-card:nth-child(3)
+			@include media-small
+				display: none
+
+	&__link-list
+		text-align: right
+		color: $color-accent-1
+		font-family: $font-family-link
+		margin-right: 1.94rem

@@ -1,0 +1,71 @@
+// Animations
+@keyframes show-up
+  from
+    opacity: 0
+    transform: translateY(80%)
+  to
+    opacity: 1
+    transform: translateY(10%)
+
+@keyframes fade-in
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes move-x-infinite
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(0.1rem)
+  
+@keyframes move-y-infinite
+  0%
+    transform: translateY(0)
+  100%
+    transform: translateY(0.1rem)
+ 
+@keyframes show-bg_map
+  from
+    opacity: 0
+    transform: translateY(10%)
+  to
+    opacity: 1
+    transform: translateY(0%)
+    
+// Class
+.show-up
+  opacity: 0
+  animation: show-up .5s 2s forwards ease-in-out
+
+.fade-in
+  opacity: 0
+  animation: fade-in 300ms 0.5s forwards ease-out
+
+.move-x-infinite
+  animation: move-x-infinite both 1s 0s infinite cubic-bezier(.6,.11,.16,.35) alternate
+
+.move-y-infinite
+  animation: move-y-infinite both 1s 0s infinite cubic-bezier(.6,.11,.16,.35) alternate
+
+.show-bg_map
+  opacity: 0
+  animation: show-bg_map 300ms 2s forwards ease-out
+
+// Use it only for header which has map as second image behind main image 
+.show-header_image
+  opacity: 0
+  animation: fade-in 300ms 1s forwards ease-out
+
+// Transitions
+.scale_1-2
+  transition: transform 200ms 0s ease-in-out
+  &:hover
+    transform: scale(1.1)
+
+.filter-image
+  filter: sepia(63%) blur(0.38rem) hue-rotate(15deg)
+  cursor: pointer
+  transition: filter 300ms
+  &:hover
+    filter: sepia(0%) blur(0) hue-rotate(0)

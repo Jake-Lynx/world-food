@@ -1,0 +1,90 @@
+.footer
+  background: linear-gradient(172deg, hsla(185, 79%, 74%, 1) 0%, $color-accent-1 100%)
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  height: 9.375rem //use variable instead
+  font-size: 0.6875rem //use variable instead
+  border-radius: 2.5rem 2.5rem 0 0
+  text-decoration: none
+
+  &__logo
+    width: 9.38rem
+    height: 2.49rem
+  
+  @include media-small
+    width: 100%
+    height: 13.81rem
+    flex-direction: column
+    align-items: center
+    margin: auto
+  
+  &__list
+    display: flex
+    flex-direction: column
+    align-items: center
+ 
+  &__item
+    text-decoration: none
+    color: $color-site-1-c
+ 
+    &:nth-child(1)
+      margin-bottom: 1.5rem
+    
+    &::placeholder
+      font-size: 0.6rem  
+
+    & .align-middle
+      position: relative
+
+    & .label
+      padding-left: 1.5rem
+
+    & .credits-icon
+      position: absolute
+      width: 0.81rem
+      height: 0.81rem
+
+    & .copyright__icon
+      position: absolute
+      width: 0.94rem
+      height: 0.94rem
+
+  &__newsletter
+    position: relative
+    width: 12.87rem
+    height: 1.68rem
+    
+    &-icon
+      position: absolute
+      right: -0.7rem
+      margin-top: 0.6rem
+      width: 0.94rem
+      height: 0.94rem
+      color: hsla(0, 1%, 59%, 1)
+    
+    &-input
+      width: 100%
+      height: 100%
+      padding: 0.16rem 0.75rem 0.16rem 0.75rem
+      text-align: left
+      border: none
+      border-radius: 1rem
+      background-color: hsla(0, 0%, 85%, 1)
+      margin-bottom: 5.5rem
+
+      &:focus
+        outline: none
+      
+    & + .copyright
+      position: relative
+      margin-top: 1.5rem
+    
+  &__social
+    text-decoration: none
+    margin: 0 0.625rem
+
+    &-icon
+      width: 1.5rem
+      height: 1.5rem

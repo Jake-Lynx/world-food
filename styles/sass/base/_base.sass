@@ -1,0 +1,90 @@
+// Standard styles for common html elements (eg: h1)
+
+body
+  max-width: 90rem
+  margin: auto
+  padding: 1.25rem 1.25rem 0 1.25rem
+  font-family: $font-family-body-text
+  font-size: $font-size-body-text
+  background-color: $color-site-1
+  color: $color-site-1-c
+
+  // Generic class
+  // Display something only on small width
+  .only-xs
+    display: none
+    @include media-small
+      display: block
+
+  // Display something only on medium width
+  .only-md
+    display: none 
+    @include media-medium
+      display: block 
+    @include media-small
+      display: none
+
+  .only-md
+    display: none
+    @include media-small
+      display: none
+
+  // Display something only on large width
+  .only-xl
+    @include media-medium
+      display: none
+
+  // Display something above small width
+  .above-xs
+    display: block
+    @include media-small
+      display: none
+
+  // Display something above large width
+  .above-xl
+    @include media-large
+      display: none
+
+section
+  margin: 0 1.25rem 
+
+h1
+  font-family: $font-family-heading
+  font-size: $font-size-heading-h1
+  font-weight: $font-weight-heading-h1
+  color: $color-site-2-c
+  text-shadow: 0 0.438rem 0.438rem $color-site-3-c
+
+h2
+  font-family: $font-family-heading
+  font-size: $font-size-heading-h2
+  color: $color-site-2-c
+
+h3
+  font-family: $font-family-heading
+  font-size: $font-size-heading-h3
+  color: $color-site-2-c
+
+h4
+  font-family: $font-family-heading
+  font-size: $font-size-heading-h4
+  color: $color-site-2-c
+
+.small-title
+  font-family: $font-family-small-title
+  font-size: $font-size-small-title
+  color: $color-site-2-c
+
+.scroll-top
+  display: flex
+  justify-content: center
+  margin-top: 1rem
+
+.chatbot
+  position: sticky
+  bottom: 0
+  right: 2rem
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 1rem
+  margin-right: 0.5rem

@@ -1,0 +1,44 @@
+.recipe-hero
+	display: flex
+	flex-direction: column
+	justify-content: center
+	&__main-section
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		align-items: center
+		margin: 3.12rem 0
+		@include media-medium
+			flex-direction: column-reverse
+			margin-bottom: 0.5rem
+
+	&__second-section
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&__title, &__subtitle
+		@include media-medium
+			text-align: center
+
+	&__image
+		width: 60%
+		max-width: 50.56rem
+		border-radius: 2.5rem
+		box-shadow: 0.44rem 0.44rem 1.56rem 0 $color-accent-1--active
+		@include media-medium
+			width: 100%
+
+.recipe-content
+	display: flex
+	flex-direction: column
+	margin: 5rem 0
+
+	.recipe-list
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr 1fr
+		
+		@include media-medium
+			grid-template-columns: 1fr 1fr 1fr
+		@include media-small
+			grid-template-columns: 1fr 1fr

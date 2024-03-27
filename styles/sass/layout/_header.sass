@@ -1,0 +1,101 @@
+@keyframes menu-showed
+  from
+    transform: translateY(-10%)
+
+  to
+    transform: translateY(0)
+
+.nav
+  width: 100%
+  display: flex
+  align-items: center
+
+  @include media-medium
+      padding-top: 1rem
+
+      &__btn
+        display: inline-block
+        position: absolute
+        right: 0
+        top: 0
+
+        &-logo
+          width: 2.5rem
+          height: 2.49rem
+          margin-top: 1.5rem
+
+  &__check
+    display: none
+    @include media-medium
+      &:checked ~ .nav__list
+        height: 15rem
+        animation: menu-showed 200ms 0s ease-out both
+
+  &__header
+    flex: 0.95
+    padding-left: 1rem
+
+    &-logo
+      width: 9.38rem
+      height: 2.49rem
+
+  &__icon
+    display: none
+    @include media-medium
+      display: inline-block
+      width: 3.12rem
+      height: 3.12rem
+      padding: 0.81rem
+  
+  &__list
+    display: flex
+    gap: 1rem
+
+    & > .nav__item--active // Active nav
+        color: $color-accent-1--active
+    
+    @include media-medium
+      position: absolute
+      display: flex
+      flex-direction: column
+      gap: 0
+      width: 95%
+      background-color: $color-site-1
+      height: 0
+      top: 6rem // level (top position) where mobile navbar must start
+      left: 1.25rem
+      overflow: hidden
+      z-index: 5
+
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 1rem
+    text-decoration: none
+    color: $color-accent-1
+    cursor: pointer
+    font-family: $font-family-link
+    font-size: $font-size-link
+
+    &:hover
+        color: $color-accent-1--active
+
+    @include media-medium
+      width: 100%
+      padding: 1rem 0
+      text-align: center
+      margin: 0
+      background-color: $color-site-1
+      
+      &:hover
+        color: $color-accent-1--active
+    
+    &-icon
+      display: none
+      @include media-medium
+        display: inline-block
+
+    &-text
+      @include media-medium
+        width: 6.25rem

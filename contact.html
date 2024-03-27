@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+	<!-- Show website logo -->
+	<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+	<title>Touristeat - Contact</title>
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<input type="checkbox" id="nav__check" class="nav__check">
+			<div class="nav__header">
+				<img class="nav__header-logo" alt="Logo Touristeat" src="assets/logo.svg">
+			</div>
+			<div class="nav__btn">
+				<label for="nav__check" class="nav__icon">
+				<img class="nav__btn-logo" alt="Logo Touristeat" src="assets/icons/icon-menu.svg">
+				</label>
+			</div>
+			<div class="nav__list">
+				<a class="nav__item" href="index.html">
+					<img class="nav__item-icon" class="Icône de gateau" src="assets/icons/icon_cake.svg">
+					<span class="nav__item-text">Accueil</span>
+				</a>
+				<a class="nav__item" href="discovery.html">
+					<img class="nav__item-icon" class="Icône de pizza" src="assets/icons/icon_pizza.svg">
+					<span class="nav__item-text">Découverte</span>
+				</a>
+				<a class="nav__item" href="recipe.html">
+					<img class="nav__item-icon" class="Icône de repas" src="assets/icons/icon_food.svg">
+					<span class="nav__item-text">Recettes</span>
+				</a>
+				<a class="nav__item nav__item--active" href="contact.html">
+					<img class="nav__item-icon" class="Icône de hamburger" src="assets/icons/icon_hamburger.svg">
+					<span class="nav__item-text">Contact</span>
+				</a>
+			</div>
+		</nav>
+	</header>
+	<section class="contact-hero">
+		<h1 class="contact-hero__title">Laissez-nous un mot</h1>
+		<img class="contact-hero__image fade-in" src="assets/images/contact_cake.png" alt="Gâteau au chocolat">
+	</section>
+
+	<section class="contact-container">
+		<form class="form" action="#" method="get">
+			<div class="form__item">
+				<input type="text" id="name" name="name">
+				<label for="name">Name</label>
+			</div>
+			<div class="form__item">
+				<input type="email" id="email" name="email">
+				<label for="email">Email</label>
+				<small class="form__helper">Email saisi invalide</small>
+			</div>
+			<div class="form__item">
+				<textarea name="message" id="message" cols="30" rows="3"></textarea>
+				<label for="message">En quoi pouvons-nous vous aider ?</label>
+			</div>
+			<input class="form__submit cta" type="submit" value="Envoyer votre message">
+		</form>
+		<img class="contact-container__image fade-in" src="assets/images/cocktail.png" alt="Cocktail à la fraise">
+	</section>
+
+	<!-- Chatbot -->
+	<a href="#" class="chatbot">
+		<img src="assets/icons/icon_chatbot.svg" alt="Icône de chatbot">
+	</a>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer__list">
+			<img class="footer__logo" alt="Logo Touristeat" src="assets/logo.svg">
+		</div>
+		<div class="footer__list above-xl">
+			<a class="footer__item" href="#">Consultez nos dernières recettes</a>
+			<a class="footer__item" href="contact.html">Contactez-nous</a>
+		</div>
+		<div class="footer__list">
+			<div class="footer__newsletter">
+				<img class="footer__newsletter-icon" src="assets/icons/icon_right-gray.svg" alt="Icône direction droite">
+				<input class="footer__item footer__newsletter-input" type="email" placeholder="Recevez les dernières actualités">
+			</div>
+			<p class="footer__item copyright">
+				<img class="copyright__icon" src="assets/icons/icon_copyright.svg" alt="Icône copyright">
+				<span class="label">Copyright - Touristeat 2023</span>
+			</p>
+		</div>
+		<div class="footer__list">
+			<a class="footer__item align-middle" href="author_credits.html">
+				<img class="credits-icon" src="assets/icons/icon_camera.svg" alt="Icône de caméra">
+				<span class="label">Crédits photos</span>
+			</a>
+			<div>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_instagram-white.svg" alt="Icône Instagram">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_youtube-white.svg" alt="Icône YouTube">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_linkedin-white.svg" alt="Icône LinkedIn">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_snapchat-white.svg" alt="Icône Snapchat">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_twitter-white.svg" alt="Icône Twitter">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_facebook-white.svg" alt="Icône Facebook">
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

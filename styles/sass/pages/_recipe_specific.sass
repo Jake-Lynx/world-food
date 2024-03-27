@@ -1,0 +1,77 @@
+.specific-recipe-hero
+	&__main-section
+		display: flex
+		justify-content: flex-end
+		@include media-medium
+			flex-direction: column
+
+	&__image
+		width: 42.41rem
+		height: 31.56rem
+		margin: auto
+		@include media-medium
+			width: 80%
+			height: auto
+		@include media-small
+			width: 100%
+			height: auto
+
+	&__social
+		display: flex
+		flex-direction: column
+		justify-content: center
+		gap: 1.5rem
+		@include media-medium
+			display: flex
+			flex-direction: row
+			justify-content: center
+			gap: 0.5rem
+
+		&-item
+			display: flex
+			align-items: center
+			color: $color-site-1-c
+			text-decoration: none
+			font-family: $font-family-link
+			font-size: $font-size-link
+
+		&-icon
+			width: 3.13rem
+			height: 3.13rem
+			margin-right: 1.56rem
+
+		&-link
+			@include media-medium
+				display: none
+
+	&__title
+		text-align: center
+		margin-top: 0
+
+.specific-recipe-content
+	display: flex
+	justify-content: space-between
+
+	&__process
+		width: 60rem
+		@include media-small
+			width: 100%
+
+		.conclusion
+			padding-bottom: 5rem
+
+		.cta
+			text-align: center
+			margin-left: 20rem
+			@include media-small
+				margin-left: 35%
+
+	&__timing
+		&-icon
+			width: 10.71rem
+			height: 12.5rem
+
+		&-title
+			text-align: center
+		@include media-small
+			display: none

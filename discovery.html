@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+	<!-- Show website logo -->
+	<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+	<title>Touristeat - Découverte</title>
+</head>
+<body>
+	<header id="top">
+		<nav class="nav">
+			<input type="checkbox" id="nav__check" class="nav__check">
+			<div class="nav__header">
+				<img class="nav__header-logo" alt="Logo Touristeat" src="assets/logo.svg">
+			</div>
+			<div class="nav__btn">
+				<label for="nav__check" class="nav__icon">
+				<img class="nav__btn-logo" alt="Logo Touristeat" src="assets/icons/icon-menu.svg">
+				</label>
+			</div>
+			<div class="nav__list">
+				<a class="nav__item" href="index.html">
+					<img class="nav__item-icon" class="Icône de gateau" src="assets/icons/icon_cake.svg">
+					<span class="nav__item-text">Accueil</span>
+				</a>
+				<a class="nav__item nav__item--active" href="discovery.html">
+					<img class="nav__item-icon" class="Icône de pizza" src="assets/icons/icon_pizza.svg">
+					<span class="nav__item-text">Découverte</span>
+				</a>
+				<a class="nav__item" href="recipe.html">
+					<img class="nav__item-icon" class="Icône de repas" src="assets/icons/icon_food.svg">
+					<span class="nav__item-text">Recettes</span>
+				</a>
+				<a class="nav__item" href="contact.html">
+					<img class="nav__item-icon" class="Icône de hamburger" src="assets/icons/icon_hamburger.svg">
+					<span class="nav__item-text">Contact</span>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<section class="discovery-hero">
+		<h1 class="discovery-hero__title">Les meilleurs délices de la planète</h1>
+		<div class="above-xs discovery-hero__layer"></div>
+		<div class="discovery-hero__map show-bg_map above-xs"></div>
+		<img class="discovery-hero__image show-header_image above-xs" src="assets/images/header_cake.png" alt="Gâteau">
+	</section>
+
+	<section class="discovery-content">
+		<div class="discovery-recipe">
+			<div class="discovery-recipe__continent">
+				<h2 class="discovery-recipe__title">Europe</h2>
+				<div class="discovery-recipe__list">
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/roast_beef.png" alt="Plat roast beef">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Roast beef with yorkshire pudding
+								</span><br>
+								<span class="discovery-card__details-country">
+									Angleterre
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/borscht.png" alt="Plat borscht">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Borscht
+								</span><br>
+								<span class="discovery-card__details-country">
+									Russie
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/roast_beef.png" alt="Plat roast beef">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Roast beef with yorkshire pudding
+								</span><br>
+								<span class="discovery-card__details-country">
+									Angleterre
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/borscht.png" alt="Plat borscht">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Borscht
+								</span><br>
+								<span class="discovery-card__details-country">
+									Russie
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="paginate-circle">
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+				</div>
+				<a class="discovery-recipe__link-list" href="#">Voir toutes les recettes</a>
+			</div>
+
+			<div class="discovery-recipe__continent">
+				<h2 class="discovery-recipe__title">Africa</h2>
+				<div class="discovery-recipe__list">
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/alloco.png" alt="Plat alloco">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Alloco
+								</span><br>
+								<span class="discovery-card__details-country">
+									Côte d'Ivoire
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/boerewors.jpg" alt="Plat Boerewors">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Boerewors
+								</span><br>
+								<span class="discovery-card__details-country">
+									Afrique du Sud
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/alloco.png" alt="Plat alloco">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Alloco
+								</span><br>
+								<span class="discovery-card__details-country">
+									Côte d'Ivoire
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/boerewors.jpg" alt="Plat Boerewors">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Boerewors
+								</span><br>
+								<span class="discovery-card__details-country">
+									Afrique du Sud
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="paginate-circle">
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+				</div>
+				<a class="discovery-recipe__link-list" href="#">Voir toutes les recettes</a>
+			</div>
+
+			<div class="discovery-recipe__continent">
+				<h2 class="discovery-recipe__title">Océanie</h2>
+				<div class="discovery-recipe__list">
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/lamington.png" alt="Plat lamington">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Lamington
+								</span><br>
+								<span class="discovery-card__details-country">
+									Australie
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/kiwi_burger.png" alt="Plat Kiwi Burger">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Kiwi Burger
+								</span><br>
+								<span class="discovery-card__details-country">
+									Nouvelle Zélande
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/lamington.png" alt="Plat lamington">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Lamington
+								</span><br>
+								<span class="discovery-card__details-country">
+									Australie
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/kiwi_burger.png" alt="Plat Kiwi Burger">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Kiwi Burger
+								</span><br>
+								<span class="discovery-card__details-country">
+									Nouvelle Zélande
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="paginate-circle">
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+				</div>
+				<a class="discovery-recipe__link-list" href="#">Voir toutes les recettes</a>
+			</div>
+
+			<div class="discovery-recipe__continent">
+				<h2 class="discovery-recipe__title">Amérique du Sud</h2>
+				<div class="discovery-recipe__list">
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/empanadas.png" alt="Plat empanadas">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Emapanadas
+								</span><br>
+								<span class="discovery-card__details-country">
+									Argentine
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/ceviche.png" alt="Plat Ceviche">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Ceviche
+								</span><br>
+								<span class="discovery-card__details-country">
+									Pérou
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/empanadas.png" alt="Plat empanadas">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Emapanadas
+								</span><br>
+								<span class="discovery-card__details-country">
+									Argentine
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/ceviche.png" alt="Plat Ceviche">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Ceviche
+								</span><br>
+								<span class="discovery-card__details-country">
+									Pérou
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="paginate-circle">
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+				</div>
+				<a class="discovery-recipe__link-list" href="#">Voir toutes les recettes</a>
+			</div>
+
+			<div class="discovery-recipe__continent">
+				<h2 class="discovery-recipe__title">Asie</h2>
+				<div class="discovery-recipe__list">
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/mapo_tofu.png" alt="Plat Mapo Tofu">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Mapo Tofu
+								</span><br>
+								<span class="discovery-card__details-country">
+									Chine
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/biryani.png" alt="Plat Biryani">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Biryani
+								</span><br>
+								<span class="discovery-card__details-country">
+									Inde
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/mapo_tofu.png" alt="Plat Mapo Tofu">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Mapo Tofu
+								</span><br>
+								<span class="discovery-card__details-country">
+									Chine
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/biryani.png" alt="Plat Biryani">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Biryani
+								</span><br>
+								<span class="discovery-card__details-country">
+									Inde
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="paginate-circle">
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+				</div>
+				<a class="discovery-recipe__link-list" href="#">Voir toutes les recettes</a>
+			</div>
+
+			<div class="discovery-recipe__continent">
+				<h2 class="discovery-recipe__title">Amérique du nord</h2>
+				<div class="discovery-recipe__list">
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/butter_tarts.png" alt="Plat Butter Tarts">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Butter Tarts
+								</span><br>
+								<span class="discovery-card__details-country">
+									Canada
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/tacos.png" alt="Plat Tacos">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Tacos
+								</span><br>
+								<span class="discovery-card__details-country">
+									Mexique
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/butter_tarts.png" alt="Plat Butter Tarts">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Butter Tarts
+								</span><br>
+								<span class="discovery-card__details-country">
+									Canada
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+					<div class="discovery-card">
+						<img class="discovery-card__img scale_1-2" src="assets/images/tacos.png" alt="Plat Tacos">
+						<div class="discovery-card__content">
+							<p class="discovery-card__details">
+								<span class="discovery-card__details-title">
+									Tacos
+								</span><br>
+								<span class="discovery-card__details-country">
+									Mexique
+								</span>
+							</p>
+							<a class="discovery-card__link" href="recipe_specific.html">
+								<img src="assets/icons/icon_cook-mobile.svg" alt="Lien découvrir recette">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="paginate-circle">
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+					<a class="paginate-circle__link" href="#"></a>
+				</div>
+				<a class="discovery-recipe__link-list" href="#">Voir toutes les recettes</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Scroll-to-top -->
+	<a href="#top" class="scroll-top">
+		<img src="assets/icons/icon_scroll-to-top.svg" alt="Bouton vers aller en début de page">
+	</a>
+
+	<!-- Chatbot -->
+	<a href="#" class="chatbot">
+		<img src="assets/icons/icon_chatbot.svg" alt="Icône de chatbot">
+	</a>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer__list">
+			<img class="footer__logo" alt="Logo Touristeat" src="assets/logo.svg">
+		</div>
+		<div class="footer__list above-xl">
+			<a class="footer__item" href="#">Consultez nos dernières recettes</a>
+			<a class="footer__item" href="contact.html">Contactez-nous</a>
+		</div>
+		<div class="footer__list">
+			<div class="footer__newsletter">
+				<img class="footer__newsletter-icon" src="assets/icons/icon_right-gray.svg" alt="Icône direction droite">
+				<input class="footer__item footer__newsletter-input" type="email" placeholder="Recevez les dernières actualités">
+			</div>
+			<p class="footer__item copyright">
+				<img class="copyright__icon" src="assets/icons/icon_copyright.svg" alt="Icône copyright">
+				<span class="label">Copyright - Touristeat 2023</span>
+			</p>
+		</div>
+		<div class="footer__list">
+			<a class="footer__item align-middle" href="author_credits.html">
+				<img class="credits-icon" src="assets/icons/icon_camera.svg" alt="Icône de caméra">
+				<span class="label">Crédits photos</span>
+			</a>
+			<div>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_instagram-white.svg" alt="Icône Instagram">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_youtube-white.svg" alt="Icône YouTube">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_linkedin-white.svg" alt="Icône LinkedIn">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_snapchat-white.svg" alt="Icône Snapchat">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_twitter-white.svg" alt="Icône Twitter">
+				</a>
+				<a class="footer__social" href="#">
+					<img class="footer__social-icon" src="assets/icons/icon_facebook-white.svg" alt="Icône Facebook">
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+.home-hero
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 0
+
+	&__main-section
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		@include media-medium
+			display: flex
+			flex-direction: column-reverse
+
+	&__title
+		flex: 0.3
+		@include media-medium
+			flex: 1
+			margin-top: 7.75rem
+		@include media-small
+			margin-top: 2.68rem
+			text-align: center
+
+	&__meal
+		position: relative 
+		flex: 0.5
+		@include media-medium
+			flex: 1
+
+	&__layer
+		position: absolute
+		left: -8rem
+		width: 50.56rem
+		height: 34.88rem
+		border-radius: 50.56rem
+		background: linear-gradient(142deg, #F2B705 0%, #F2E206 100%)
+		filter: blur(9.38rem)
+		z-index: 1
+		@include media-medium
+			width: 100%
+			left: 4rem
+			top: 5rem
+		@include media-small
+			background: linear-gradient(142deg, #F22E2F 0%, #F25C05 100%)
+			border-radius: 21.75rem
+			width: 100%
+			top: 0
+			left: 0
+
+	&__image
+		position: relative
+		width: 30.5rem
+		height: auto
+		z-index: 2
+		@include media-medium
+			width: 100%
+
+	.home-hero__main-section .only-md
+		@include media-medium
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+			gap: 2rem
+
+			.home-hero__value-item:nth-child(2)
+				margin-top: 5rem
+		@include media-small
+			display: none
+	&__value
+		flex: 0.2
+		&-item
+			display: flex
+			flex-direction: row
+			align-items: center
+		&-icon
+			margin-right: 1rem
+		&-icon, &-title
+			display: block
+
+	.cta
+		z-index: 2
+		margin-top: 5rem
+
+.home-about
+	text-align: center
+	margin-top: 6.44rem
+
+	&__description
+		margin-top: 3.12rem
+
+.home-recipe
+	display: flex
+	flex-direction: column
+	margin-top: 6.25rem
+	align-items: center
+
+	&__intro
+		position: relative
+		display: flex
+		justify-content: center
+
+		&-left
+			position: absolute
+			bottom: 3rem
+			left: -5rem
+			z-index: -1
+
+		&-right
+			position: absolute
+			opacity: 0.7
+			right: -1.5rem
+			top: 1.5rem
+			z-index: -1
+
+	&__list
+		display: flex
+		flex-direction: row
+		margin-bottom: 3rem
+		gap: 4rem
+
+.home-daily
+	display: flex
+	flex-direction: column
+	margin-top: 6.44rem
+	@include media-medium
+		margin-top: 4.25rem
+
+	&__title
+		text-align: center
+
+	&__content
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+
+	&__description
+		display: flex
+		flex-direction: column
+		align-items: center
+		flex: 0.5
+		text-align: center
+		margin-top: 5rem
+		margin-right: 14rem
+		@include media-medium
+			flex: 0.8
+
+		.cta
+			margin-top: 1rem
+
+	&__illustration
+		display: flex
+		flex-direction: column 
+		flex: 0.3
+		align-items: center
+		@include media-medium
+			flex: 0.2
+		@include media-small
+			display: flex
+			flex-direction: column-reverse
+			flex: 1
+
+.home-like
+	margin: 6.25rem 0
+
+	&__title
+		text-align: center
+
+	&__list
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr 1fr
+		@include media-medium
+			display: grid
+			grid-template-columns: 1fr 1fr 1fr
